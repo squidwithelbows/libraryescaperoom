@@ -42,7 +42,7 @@ document.getElementById("submit").addEventListener("click",()=>{
 })
 
 // fill up the solve-image-container
-const imageCount = 15
+const imageCount = 9
 const solveImageContainer = document.getElementById("solve-image-main-container")
 for (let i=0; i<3; i++) {
     for (let j=0; j<3; j++) {
