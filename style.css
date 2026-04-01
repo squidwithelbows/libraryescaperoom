@@ -24,6 +24,10 @@ h2 {
   font-size: 36px;
 }
 
+h1, h2 {
+  margin-bottom: 30px;
+}
+
 .error {
     border: solid 1px rgb(221,75,57);
     width: 300px;
