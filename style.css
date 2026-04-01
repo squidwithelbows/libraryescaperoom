@@ -12,6 +12,7 @@ body {
     align-items: center;  
     height: 100%;
     max-width: 800px;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 .error {
