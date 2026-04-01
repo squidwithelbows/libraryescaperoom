@@ -60,18 +60,6 @@ for (let i=0; i<3; i++) {
     }
 }
 
-// image on click will refresh new image
-const refreshImage = (image) => {
-    image.classList.add("fade-out") //fade out animation
-    image.style.pointerEvents = "none"; //make it unclickable
-    setTimeout(()=>{
-        image.setAttribute("src","")
-        image.setAttribute("src",`./images/img${Math.floor(Math.random()*imageCount)+1}.jpg`)
-        image.classList.remove("fade-out")
-        image.style.pointerEvents = "auto"; //make it clickable again
-    },1000)
-}
-
 // show try again when verify is click
 document.getElementById("verify").addEventListener("click",()=> {
     document.getElementById("solve-image-error-msg").style.display = "block"
