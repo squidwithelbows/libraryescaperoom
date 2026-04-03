@@ -80,7 +80,7 @@ refreshButton.addEventListener("click",()=>{
                 imageContainer.classList.add("solve-image-container")
         
                 const image = document.createElement("img")
-                image.setAttribute("src",`./images/img${((i*3)+j)+1}.jpg`)
+                image.setAttribute("src",`./images/img${Collections.shuffle(numbers)}.jpg`) 
                 image.classList.add("solve-image")
                 image.addEventListener("click",()=>{
                     refreshImage(image)
