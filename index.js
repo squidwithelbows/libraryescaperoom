@@ -50,7 +50,7 @@ for (let i=0; i<3; i++) {
         imageContainer.classList.add("solve-image-container")
 
         const image = document.createElement("img")
-        image.setAttribute("src",`./images/img${((i*3)+j)+1}.jpg`)
+        image.setAttribute("src",`./images/img${Collections.shuffle(1,2,3,4,5,6,7,8,9);}.jpg`) 
         image.classList.add("solve-image")
         image.addEventListener("click",()=>{
             refreshImage(image)
