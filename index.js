@@ -65,35 +65,67 @@ document.getElementById("verify").addEventListener("click",()=> {
     document.getElementById("solve-image-error-msg").style.display = "block"
 })
 
+// fill up the solve-image-container
+const imageCount = 9
+const solveImageContainer = document.getElementById("solve-image-main-container")
+
+// Function to create a shuffled array of unique images
+function getShuffledImages(count) {
+    const images = []
+    for (let i = 1; i <= count; i++) {
+        images.push(i)
+    }
+    // Fisher-Yates shuffle algorithm
+    for (let i = images.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [images[i], images[j]] = [images[j], images[i]]
+    }
+    return images
+}
+
+let currentImages = getShuffledImages(imageCount)
+let imageIndex = 0
+
+function loadImages(container) {
+    container.innerHTML = ""
+    imageIndex = 0
+    currentImages = getShuffledImages(imageCount)
+    
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            const imageContainer = document.createElement("div")
+            imageContainer.classList.add("solve-image-container")
+            
+            const image = document.createElement("img")
+            image.setAttribute("src", `./images/img${currentImages[imageIndex]}.jpg`)
+            imageIndex++
+            image.classList.add("solve-image")
+            image.addEventListener("click", ()=>{
+                refreshImage(image)
+            })
+            imageContainer.appendChild(image)
+            container.appendChild(imageContainer)
+        }
+    }
+}
+
+// Initial load
+loadImages(solveImageContainer)
+
 // refresh everything when refresh is clicked
 const refreshButton = document.getElementById("refresh")
-refreshButton.addEventListener("click",()=>{
-    refreshButton.style.pointerEvents = "none"
-    solveImageContainer.classList.add("fade-out")
-    document.getElementById("solve-image-error-msg").style.display = "none"
-    setTimeout(()=> {
-        solveImageContainer.classList.remove("fade-out")
-        solveImageContainer.innerHTML = ""
-        for (let i=0; i<3; i++) {
-            for (let j=0; j<3; j++) {
-                const imageContainer = document.createElement("div")
-                imageContainer.classList.add("solve-image-container")
-        
-                const image = document.createElement("img")
-                image.setAttribute("src",`./images/img${Math.floor(Math.random()*imageCount)+1}.jpg`)  
-                image.classList.add("solve-image")
-                image.addEventListener("click",()=>{
-                    refreshImage(image)
-                })
-                
-                imageContainer.appendChild(image)
-                solveImageContainer.appendChild(imageContainer)
-            }
-        }
-        refreshButton.style.pointerEvents = "auto"
-    },1000)
-   
-})
+if (refreshButton) {
+    refreshButton.addEventListener("click", ()=>{
+        refreshButton.style.pointerEvents = "none"
+        solveImageContainer.classList.add("fade-out")
+        document.getElementById("solve-image-error-msg").style.display = "none"
+        setTimeout(()=> {
+            solveImageContainer.classList.remove("fade-out")
+            loadImages(solveImageContainer)
+            refreshButton.style.pointerEvents = "auto"
+        }, 1000)
+    })
+}
 
 
 // toggle information
