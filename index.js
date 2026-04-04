@@ -65,7 +65,24 @@ document.getElementById("verify").addEventListener("click",()=> {
     document.getElementById("solve-image-error-msg").style.display = "block"
 })
 
-// refresh everything when refresh is clicked 
+// toggle information
+document.getElementById("information").addEventListener("click",() =>{
+    const information = document.getElementById("information-text")
+    if (information.style.display == "block") {
+        information.style.display = "none"
+    }
+    else {
+        information.style.display = "block"
+    }
+})
+
+// show audio div, no longer attached to a button
+document.getElementById("audio").addEventListener("click",()=> {
+    document.getElementById("solve-image-div").style.display = "none"
+    document.getElementById("solve-audio-div").style.display = "block"
+})
+
+// refresh everything when refresh is clicked, no longer attached to a button
 const refreshButton = document.getElementById("refresh") 
 refreshButton.addEventListener("click",()=>{ 
     refreshButton.style.pointerEvents = "none" 
@@ -95,20 +112,3 @@ refreshButton.addEventListener("click",()=>{
     },1000) 
 
 }) 
-
-// toggle information
-document.getElementById("information").addEventListener("click",() =>{
-    const information = document.getElementById("information-text")
-    if (information.style.display == "block") {
-        information.style.display = "none"
-    }
-    else {
-        information.style.display = "block"
-    }
-})
-
-// show audio div 
-document.getElementById("audio").addEventListener("click",()=> {
-    document.getElementById("solve-image-div").style.display = "none"
-    document.getElementById("solve-audio-div").style.display = "block"
-})
