@@ -82,9 +82,6 @@ function loadImageSet(imageFolder, correctAnswers, titleText, subtitleText) {
             solveImageContainer.appendChild(imageContainer)
         }
     }
-    
-    // Store correct answers for this level
-    imageContainer.correctAnswers = correctAnswers
 }
 
 // Load initial image set
