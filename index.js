@@ -110,8 +110,8 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images3",
                 [3, 5],
-                "cells in the Metaphase of Mitosis",
-                "Select all images with"
+                "the Metaphase of Mitosis",
+                "Select all cells in"
             )
         }
     } else {
