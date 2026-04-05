@@ -227,8 +227,8 @@ h1 {
 .solve-image-container.clicked::after {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 2px;
+    left: 2px;
     z-index: 10;
     width: 30px;
     height: 30px;
