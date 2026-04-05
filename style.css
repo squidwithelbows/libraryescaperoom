@@ -301,6 +301,10 @@ h1 {
     margin-bottom: 15px;
 }
 
+.solve-image.clicked {
+    margin: 10px !important;
+}
+
 #information-text {
     font-size: x-small;
     overflow-y: scroll;
