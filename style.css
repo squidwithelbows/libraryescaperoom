@@ -161,6 +161,10 @@ h1 {
     opacity: 1;
 }
 
+#solve-box.visible * {
+    pointer-events: auto;
+}
+
 #solve-triangle-outline {
     background-color: rgb(207,207,207);
     width: 15px;
