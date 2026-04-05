@@ -343,6 +343,7 @@ h1 {
     display: none;
 }
 
-#solve-audio-div {
-    display: none;
+#information {
+    cursor: pointer;
+    user-select: none;
 }
