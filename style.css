@@ -225,13 +225,16 @@ h1 {
 }
 
 .solve-image-container.clicked::after {
-    content: url('checkmark.png');
+    content: '';
     position: absolute;
     top: 5px;
     left: 5px;
     z-index: 10;
     width: 30px;
     height: 30px;
+    background-image: url('checkmark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .solve-image.clicked {
