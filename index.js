@@ -1,16 +1,12 @@
-
 // make the checkbox div focusable
 const captchaCheckbox = document.getElementById("captcha-checkbox")
 const checkboxSpinner = document.getElementById("captcha-checkbox-spinner")
 captchaCheckbox.addEventListener("mousedown",()=> {
-    // console.log("focused")
     captchaCheckbox.classList.add("focused")
     captchaCheckbox.classList.remove("blurred")
-
 })
 
 captchaCheckbox.addEventListener("mouseup",()=> {
-    // console.log("blurred")
     captchaCheckbox.classList.add("blurred")
     captchaCheckbox.classList.remove("focused")
 })
@@ -36,34 +32,83 @@ captchaCheckbox.addEventListener("click",()=> {
 
 // show error if submit button is click without checking the checkbox
 document.getElementById("submit").addEventListener("click",()=>{
-    // console.log("clicked")
     document.getElementById("captcha-main-div").classList.add("error")
     document.getElementById("captcha-error-msg").style.display = "block"
 })
 
-// fill up the solve-image-container
-const imageCount = 9
-const solveImageContainer = document.getElementById("solve-image-main-container")
-for (let i=0; i<3; i++) {
-    for (let j=0; j<3; j++) {
-        const imageContainer = document.createElement("div")
-        imageContainer.classList.add("solve-image-container")
+// Track current level (1 or 2)
+let currentLevel = 1
 
-        const image = document.createElement("img")
-        image.setAttribute("src",`./images/img${((i*3)+j)+1}.jpg`) 
-        image.classList.add("solve-image")
-        image.addEventListener("click",()=>{
-        imageContainer.classList.toggle("clicked")
-        image.classList.toggle("clicked")
-    })
-        imageContainer.appendChild(image)
-        solveImageContainer.appendChild(imageContainer)
+// Store selected image indices
+let selectedImages = new Set()
+
+// Function to load images and create event listeners
+function loadImageSet(imageFolder, correctAnswers, titleText, subtitleText) {
+    const solveImageContainer = document.getElementById("solve-image-main-container")
+    solveImageContainer.innerHTML = "" // Clear previous images
+    selectedImages.clear()
+    
+    // Update title
+    document.getElementById("solve-title-text").textContent = titleText
+    document.getElementById("solve-title-subtext").textContent = subtitleText
+    
+    // Clear error message
+    document.getElementById("solve-image-error-msg").style.display = "none"
+    
+    for (let i=0; i<3; i++) {
+        for (let j=0; j<3; j++) {
+            const imageIndex = (i*3)+j+1
+            const imageContainer = document.createElement("div")
+            imageContainer.classList.add("solve-image-container")
+
+            const image = document.createElement("img")
+            image.setAttribute("src",`${imageFolder}/img${imageIndex}.jpg`) 
+            image.classList.add("solve-image")
+            
+            image.addEventListener("click",()=>{
+                imageContainer.classList.toggle("clicked")
+                image.classList.toggle("clicked")
+                
+                // Track selected images
+                if (imageContainer.classList.contains("clicked")) {
+                    selectedImages.add(imageIndex)
+                } else {
+                    selectedImages.delete(imageIndex)
+                }
+            })
+            
+            imageContainer.appendChild(image)
+            solveImageContainer.appendChild(imageContainer)
+        }
     }
+    
+    // Store correct answers for this level
+    imageContainer.correctAnswers = correctAnswers
 }
 
-// show try again when verify is click
+// Load initial image set
+loadImageSet("./images", [2, 4, 7, 8], "traffic lights", "Select all images with")
+
+// Handle verify button click
 document.getElementById("verify").addEventListener("click",()=> {
-    document.getElementById("solve-image-error-msg").style.display = "block"
+    const correctAnswers = [2, 4, 7, 8]
+    
+    // Check if selected images match correct answers
+    if (selectedImages.size === correctAnswers.length && 
+        correctAnswers.every(img => selectedImages.has(img))) {
+        
+        // Correct! Load next level
+        currentLevel = 2
+        loadImageSet(
+            "./images2", 
+            [1, 3, 5, 9], // Change these to the correct answers for level 2
+            "stop signs",  // Change to your desired title
+            "Select all images with"
+        )
+    } else {
+        // Incorrect, show error
+        document.getElementById("solve-image-error-msg").style.display = "block"
+    }
 })
 
 // toggle information
