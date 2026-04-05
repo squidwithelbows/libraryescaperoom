@@ -302,8 +302,8 @@ h1 {
 }
 
 .solve-image.clicked {
-    margin: -20px !important;
-    padding: 20px !important;
+    width: calc(100% - 40px) !important;
+    height: calc(100% - 40px) !important;
 }
 
 #information-text {
