@@ -21,14 +21,13 @@ captchaCheckbox.addEventListener("click",()=> {
         captchaCheckbox.style.display = "block"
         checkboxSpinner.style.display = "none"
 
-        // show the solve box
-        const solveBox = document.getElementById("solve-box")
-        if (solveBox.style.display == "block") {
-            solveBox.style.display = "none"
-        }
-        else {
-            solveBox.style.display = "block"
-        }
+    // show the solve box
+    const solveBox = document.getElementById("solve-box")
+    if (solveBox.classList.contains("visible")) {
+        solveBox.classList.remove("visible")
+    } else {
+        solveBox.classList.add("visible")
+    }
     },Math.floor(Math.random()*1000)+200)
 })
 
