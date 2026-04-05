@@ -54,7 +54,6 @@ for (let i=0; i<3; i++) {
         image.classList.add("solve-image")
         image.addEventListener("click",()=>{
         image.classList.toggle("clicked")
-        refreshImage(image)
     })
         imageContainer.appendChild(image)
         solveImageContainer.appendChild(imageContainer)
