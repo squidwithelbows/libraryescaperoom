@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 // make the checkbox div focusable
 const captchaCheckbox = document.getElementById("captcha-checkbox")
 const checkboxSpinner = document.getElementById("captcha-checkbox-spinner")
@@ -120,4 +122,6 @@ document.getElementById("information").addEventListener("click",() =>{
     else {
         information.style.display = "block"
     }
+})
+
 })
