@@ -99,8 +99,8 @@ document.getElementById("verify").addEventListener("click",()=> {
         currentLevel = 2
         loadImageSet(
             "./images2", 
-            [1, 3, 5, 9], // Change these to the correct answers for level 2
-            "stop signs",  // Change to your desired title
+            [2, 3, 6, 7], // Change these to the correct answers for level 2
+            "bicycles",  // Change to your desired title
             "Select all images with"
         )
     } else {
