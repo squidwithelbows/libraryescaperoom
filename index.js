@@ -53,8 +53,9 @@ for (let i=0; i<3; i++) {
         image.setAttribute("src",`./images/img${((i*3)+j)+1}.jpg`) 
         image.classList.add("solve-image")
         image.addEventListener("click",()=>{
-            refreshImage(image)
-        })
+        image.classList.toggle("clicked")
+        refreshImage(image)
+    })
         imageContainer.appendChild(image)
         solveImageContainer.appendChild(imageContainer)
     }
