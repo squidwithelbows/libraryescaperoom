@@ -43,9 +43,13 @@ let currentLevel = 1
 // Store selected image indices
 let selectedImages = new Set()
 
+// Store correct answers for current level
+let correctAnswersForLevel = [2, 4, 7, 8]
+
 // Function to load images and create event listeners
 function loadImageSet(imageFolder, correctAnswers, titleText, subtitleText) {
     const solveImageContainer = document.getElementById("solve-image-main-container")
+    correctAnswersForLevel = correctAnswers  // Store the answers for this level
     solveImageContainer.innerHTML = "" // Clear previous images
     selectedImages.clear()
     
@@ -89,36 +93,29 @@ loadImageSet("./images", [2, 4, 7, 8], "traffic lights", "Select all images with
 
 // Handle verify button click
 document.getElementById("verify").addEventListener("click",()=> {
-    if (currentLevel === 1) {
-        const correctAnswers = [2, 4, 7, 8]
+    if (selectedImages.size === correctAnswersForLevel.length && 
+        correctAnswersForLevel.every(img => selectedImages.has(img))) {
         
-        if (selectedImages.size === correctAnswers.length && 
-            correctAnswers.every(img => selectedImages.has(img))) {
-            currentLevel = 2
+        // Correct! Load next level
+        currentLevel++
+        
+        if (currentLevel === 2) {
             loadImageSet(
                 "./images2", 
                 [2, 3, 6, 7],
                 "bicycles",
                 "Select all images with"
             )
-        } else {
-            document.getElementById("solve-image-error-msg").style.display = "block"
-        }
-    } else if (currentLevel === 2) {
-        const correctAnswers = [2, 3, 6, 7]
-        
-        if (selectedImages.size === correctAnswers.length && 
-            correctAnswers.every(img => selectedImages.has(img))) {
-            currentLevel = 3
+        } else if (currentLevel === 3) {
             loadImageSet(
-                "./images3",     // Level 3 image folder
-                [3, 5],        // Level 3 correct answers
+                "./images3",
+                [3, 5],
                 "cells in the Metaphase of Mitosis",
                 "Select all images with"
             )
-        } else {
-            document.getElementById("solve-image-error-msg").style.display = "block"
         }
+    } else {
+        document.getElementById("solve-image-error-msg").style.display = "block"
     }
 })
 
