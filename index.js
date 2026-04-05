@@ -89,23 +89,36 @@ loadImageSet("./images", [2, 4, 7, 8], "traffic lights", "Select all images with
 
 // Handle verify button click
 document.getElementById("verify").addEventListener("click",()=> {
-    const correctAnswers = [2, 4, 7, 8]
-    
-    // Check if selected images match correct answers
-    if (selectedImages.size === correctAnswers.length && 
-        correctAnswers.every(img => selectedImages.has(img))) {
+    if (currentLevel === 1) {
+        const correctAnswers = [2, 4, 7, 8]
         
-        // Correct! Load next level
-        currentLevel = 2
-        loadImageSet(
-            "./images2", 
-            [2, 3, 6, 7], // Change these to the correct answers for level 2
-            "bicycles",  // Change to your desired title
-            "Select all images with"
-        )
-    } else {
-        // Incorrect, show error
-        document.getElementById("solve-image-error-msg").style.display = "block"
+        if (selectedImages.size === correctAnswers.length && 
+            correctAnswers.every(img => selectedImages.has(img))) {
+            currentLevel = 2
+            loadImageSet(
+                "./images2", 
+                [2, 3, 6, 7],
+                "bicycles",
+                "Select all images with"
+            )
+        } else {
+            document.getElementById("solve-image-error-msg").style.display = "block"
+        }
+    } else if (currentLevel === 2) {
+        const correctAnswers = [2, 3, 6, 7]
+        
+        if (selectedImages.size === correctAnswers.length && 
+            correctAnswers.every(img => selectedImages.has(img))) {
+            currentLevel = 3
+            loadImageSet(
+                "./images3",     // Level 3 image folder
+                [3, 5],        // Level 3 correct answers
+                "cells in the Metaphase of Mitosis",
+                "Select all images with"
+            )
+        } else {
+            document.getElementById("solve-image-error-msg").style.display = "block"
+        }
     }
 })
 
