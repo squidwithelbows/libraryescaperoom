@@ -108,10 +108,18 @@ document.getElementById("verify").addEventListener("click",()=> {
             )
         } else if (currentLevel === 3) {
             loadImageSet(
-                "./images3",
+                "./mitosis",
                 [3, 5],
                 "the Metaphase of Mitosis",
                 "Select all cells in"
+            )
+        }
+        } else if (currentLevel === 4) {
+            loadImageSet(
+                "./asl",
+                [1, 3, 4, 8, 9],
+                "spell the word LUCKY",
+                "Select all images that"
             )
         }
     } else {
