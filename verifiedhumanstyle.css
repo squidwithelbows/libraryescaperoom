@@ -1,0 +1,10 @@
+/*
+new css 
+*/
+
+  h1, h2, h3 {
+      font-family: "Comic Sans MS", "ChalkboardSE-Light", cursive, sans-serif;
+      color: #dd22d5;
+      font-weight: normal;
+      word-break: break-word;
+  }
