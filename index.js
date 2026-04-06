@@ -113,7 +113,6 @@ document.getElementById("verify").addEventListener("click",()=> {
                 "the Metaphase of Mitosis",
                 "Select all cells in"
             )
-        }
         } else if (currentLevel === 4) {
             loadImageSet(
                 "./asl",
