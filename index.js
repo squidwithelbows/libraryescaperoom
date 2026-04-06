@@ -89,7 +89,7 @@ function loadImageSet(imageFolder, correctAnswers, titleText, subtitleText) {
 }
 
 // Load initial image set
-loadImageSet("./images", [2, 4, 7, 8], "traffic lights", "Select all images with")
+loadImageSet("./traffic", [2, 4, 7, 8], "traffic lights", "Select all images with")
 
 // Handle verify button click
 document.getElementById("verify").addEventListener("click",()=> {
@@ -101,7 +101,7 @@ document.getElementById("verify").addEventListener("click",()=> {
         
         if (currentLevel === 2) {
             loadImageSet(
-                "./images2", 
+                "./bikes", 
                 [2, 3, 6, 7],
                 "bicycles",
                 "Select all images with"
