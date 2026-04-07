@@ -1,12 +1,9 @@
-/*
-new css copy pasted from spirits and such, edit later
-*/
-
 html {
-    box-sizing: border-box;
+    display: flex;   
+    flex-direction: column;
     justify-content: center;
     align-items: center;  
-    }
+}
   
   body {
       background-color: #E4FFF7;
