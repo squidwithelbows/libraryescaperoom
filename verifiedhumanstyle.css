@@ -38,12 +38,9 @@ html {
       text-align: center;
     }
 
-.dropshadow {
-    text-shadow: 3px 3px 0px #E485F8;
-    }
-
 .wavy span {
     display: inline-block;
+    text-shadow: 3px 3px 0px #E485F8;
     animation: wave 2s ease-in-out infinite;
     }
 
