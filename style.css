@@ -21,6 +21,11 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Lora';
+    font-size: 22px;
+}
+
 .error {
     border: solid 1px rgb(221,75,57);
     width: 300px;
