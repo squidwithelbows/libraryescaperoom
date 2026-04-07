@@ -26,6 +26,7 @@ h2 {
     font-family: 'Lora', sans-serif;
     font-size: 18px;
     text-align: center;
+    max-width: 800px;
 }
 
 .error {
