@@ -18,10 +18,18 @@ html {
       max-width: 1000px;
     }
 
-  h1, h2, h3 {
+  h1 {
       font-family: "Archivo Black", "Archivo", sans-serif;
       color: #5362F6;
       font-size: 65px;
+      font-weight: normal;
+      text-align: center;
+    }
+
+  h2, h3 {
+      font-family: "Archivo Black", "Archivo", sans-serif;
+      color: #5362F6;
+      font-size: 50px;
       font-weight: normal;
       text-align: center;
     }
