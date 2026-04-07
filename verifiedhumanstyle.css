@@ -4,31 +4,22 @@ new css copy pasted from spirits and such, edit later
 
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
+    justify-content: center;
+    align-items: center;  
   }
   
   body {
-      background-image: url('Assets/repeatingbackground.jpg');
-      background-position: top center;
-      background-repeat: repeat;
+      background-color: #D0E4EE;
       font-family: Georgia, "Times New Roman", serif;
       color: #000000;
       font-size: 16px;
       line-height: 1.5;
-      cursor: default;
-      cursor: url('Assets/dimple-cursor.cur'), default;
-      cursor: url('Assets/dimple-cursor.cur') 32 32, default;
-  }
-  
-  html, body {
-      margin: 0;
   }
 
   h1, h2, h3 {
       font-family: "Comic Sans MS", "ChalkboardSE-Light", cursive, sans-serif;
-      color: #dd22d5;
+      color: #f64a8a;
       font-weight: normal;
       word-break: break-word;
+      text-align: center;
   }
