@@ -125,14 +125,14 @@ document.getElementById("verify").addEventListener("click",()=> {
                 "./river",
                 [5, 9],
                 "always runs but never walks, has a bed but never sleeps, has a mouth but never speaks",
-                "Select all images that"
+                "Select all images with the thing that"
             )
         } else if (currentLevel === 6) {
             loadImageSet(
                 "./disasters",
                 [3, 5, 6, 7],
-                "the thing described by the letters on the west wall once they’ve been unscrambled",
-                "Select all images that"
+                "described by the letters on the west wall once they’ve been unscrambled",
+                "Select all images that are"
             )
         }
     } else {
