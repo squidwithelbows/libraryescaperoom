@@ -120,6 +120,20 @@ document.getElementById("verify").addEventListener("click",()=> {
                 "spell the word LUCKY",
                 "Select all images that"
             )
+        } else if (currentLevel === 5) {
+            loadImageSet(
+                "./river",
+                [5, 9],
+                "always runs but never walks, has a bed but never sleeps, has a mouth but never speaks",
+                "Select all images that"
+            )
+        } else if (currentLevel === 6) {
+            loadImageSet(
+                "./disasters",
+                [3, 5, 6, 7],
+                "the thing described by the letters on the west wall once they’ve been unscrambled",
+                "Select all images that"
+            )
         }
     } else {
         document.getElementById("solve-image-error-msg").style.display = "block"
