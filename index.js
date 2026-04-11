@@ -118,14 +118,14 @@ document.getElementById("verify").addEventListener("click",()=> {
                 "./asl",
                 [1, 3, 4, 8, 9],
                 "spell the word LUCKY",
-                "Select all images that"
+                "Select all the letters that"
             )
         } else if (currentLevel === 5) {
             loadImageSet(
                 "./river",
                 [5, 9],
                 "always runs but never walks, has a bed but never sleeps, has a mouth but never speaks",
-                "Select all images with the thing that"
+                "Select all images with something that"
             )
         } else if (currentLevel === 6) {
             loadImageSet(
