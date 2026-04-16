@@ -138,8 +138,8 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./disasters",
                 [3, 5, 6, 7],
-                "described by the letters on the west wall once they’ve been unscrambled",
-                "Select all images that are"
+                "spelled by the letters on the west wall that are connected with red string",
+                "Select all images that match what is"
             )
         }
     } else {
