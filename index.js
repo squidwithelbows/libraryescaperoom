@@ -115,26 +115,19 @@ document.getElementById("verify").addEventListener("click",()=> {
             )
         } else if (currentLevel === 4) {
             loadImageSet(
-                "./asl",
-                [1, 3, 4, 8, 9],
-                "spell the word LUCKY",
-                "Select all the letters that"
-            )
-        } else if (currentLevel === 5) {
-            loadImageSet(
                 "./months",
                 [1, 2, 3, 4, 5, 6, 7, 8, 9],
                 "28 days",
                 "Select all the months with"
             )
-        } else if (currentLevel === 6) {
+        } else if (currentLevel === 5) {
             loadImageSet(
                 "./river",
                 [5, 9],
                 "always runs but never walks, has a bed but never sleeps, has a mouth but never speaks",
                 "Select all images with something that"
             )
-        } else if (currentLevel === 7) {
+        } else if (currentLevel === 6) {
             loadImageSet(
                 "./disasters",
                 [3, 5, 6, 7],
