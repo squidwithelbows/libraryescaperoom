@@ -129,6 +129,27 @@ document.getElementById("verify").addEventListener("click",()=> {
             )
         } else if (currentLevel === 6) {
             loadImageSet(
+                "./images3",
+                [2, 3, 6],
+                "are on the clock",
+                "Select all images that"
+            )
+        } else if (currentLevel === 7) {
+            loadImageSet(
+                "./images2",
+                [2, 5, 6, 9],
+                "are in the sink",
+                "Select all images that"
+            )
+        } else if (currentLevel === 8) {
+            loadImageSet(
+                "./images4",
+                [1, 4, 7, 8],
+                "are on page # of the books in this room",
+                "Select all images that"
+            )
+        } else if (currentLevel === 9) {
+            loadImageSet(
                 "./disasters",
                 [3, 5, 6, 7],
                 "spelled by the letters connected with red string",
