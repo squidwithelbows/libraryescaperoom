@@ -7,6 +7,8 @@ html {
   
   body {
       background-image: url("./backgroundrays.jpg");
+      background-repeat: no repeat;
+      background-size: contain;
       background-color: #E4FFF7;
       font-family: "Comic Sans MS", "ChalkboardSE-Light", cursive, sans-serif;
       color: #000000;
