@@ -166,7 +166,7 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images1",
                 [1],
-                "monsters that are watching you right now",
+                "monsters watching you right now",
                 "Select all four"
             )
         } else if (currentLevel === 12) {
