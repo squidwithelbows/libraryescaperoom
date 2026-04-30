@@ -115,23 +115,23 @@ document.getElementById("verify").addEventListener("click",()=> {
             )
         } else if (currentLevel === 4) {
             loadImageSet(
-                "./months",
-                [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                "28 days",
-                "Select all the months with"
-            )
-        } else if (currentLevel === 5) {
-            loadImageSet(
                 "./river",
                 [5, 9],
                 "always runs but never walks, has a bed but never sleeps, has a mouth but never speaks",
                 "Select all images with something that"
             )
+        } else if (currentLevel === 5) {
+            loadImageSet(
+                "./months",
+                [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                "28 days",
+                "Select all the months with"
+            )
         } else if (currentLevel === 6) {
             loadImageSet(
                 "./images3",
                 [2, 3, 6],
-                "are on the clock",
+                "are on the clock in this room",
                 "Select all images that"
             )
         } else if (currentLevel === 7) {
@@ -145,7 +145,7 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images4",
                 [1, 4, 7, 8],
-                "are on page # of the books in this room",
+                "are on page 153 of the books in this room",
                 "Select all images that"
             )
         } else if (currentLevel === 9) {
@@ -155,6 +155,30 @@ document.getElementById("verify").addEventListener("click",()=> {
                 "spelled by the letters connected with red string",
                 "Select all images with what is"
             )
+        } else if (currentLevel === 10) {
+            loadImageSet(
+                "./images1",
+                [1, 5, 6, 8],
+                "the puzzle in the fake book",
+                "Select all images that match"
+            )
+        } else if (currentLevel === 11) {
+            loadImageSet(
+                "./images1",
+                [1],
+                "the monsters that are watching you right now",
+                "Select all four of"
+            )
+        } else if (currentLevel === 12) {
+            loadImageSet(
+                "./images1",
+                [1],
+                "the Sunset Park librarians' pockets",
+                "Select all the things inside"
+            )
+        } else if (currentLevel === 13) { 
+            // Open new webpage after final level is completed 
+            window.open("https://squidwithelbows.github.io/libraryescaperoom/verifiedhuman", "_blank") 
         }
     } else {
         document.getElementById("solve-image-error-msg").style.display = "block"
