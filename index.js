@@ -124,8 +124,8 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./months",
                 [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                "28 days",
-                "Select all the months with"
+                "months with 28 days",
+                "Select all of the"
             )
         } else if (currentLevel === 6) {
             loadImageSet(
@@ -145,8 +145,8 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images4",
                 [1, 4, 7, 8],
-                "are on page 153 of the books in this room",
-                "Select all images that"
+                "are on page 153",
+                "Check the books in this room and select all images that"
             )
         } else if (currentLevel === 9) {
             loadImageSet(
