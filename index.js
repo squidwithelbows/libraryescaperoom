@@ -158,16 +158,16 @@ document.getElementById("verify").addEventListener("click",()=> {
         } else if (currentLevel === 10) {
             loadImageSet(
                 "./images1",
-                [1, 5, 6, 8],
-                "the puzzle in the fake book",
-                "Select all images that match"
+                [1],
+                "monsters watching you right now",
+                "Look out! Select all four"
             )
         } else if (currentLevel === 11) {
             loadImageSet(
                 "./images1",
-                [1],
-                "monsters watching you right now",
-                "Look out! Select all four"
+                [1, 5, 6, 8],
+                "the puzzle in the fake book",
+                "Select all images that match"
             )
         } else if (currentLevel === 12) {
             loadImageSet(
