@@ -152,8 +152,8 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./disasters",
                 [3, 5, 6, 7],
-                "what is spelled by the letters on the wall",
-                "Follow the red string and select all images that match"
+                "spelled by the letters on the wall",
+                "Follow the red string and select all images with what is"
             )
         } else if (currentLevel === 10) {
             loadImageSet(
