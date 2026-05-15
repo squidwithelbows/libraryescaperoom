@@ -173,7 +173,7 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images1",
                 [1],
-                "the Sunset Park librarians' pockets",
+                "the librarians' pockets",
                 "Select all the things currently in"
             )
         } else if (currentLevel === 13) { 
