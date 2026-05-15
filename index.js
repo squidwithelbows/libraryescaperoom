@@ -138,38 +138,45 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images4",
                 [1, 4, 7, 8],
-                "on page 153",
+                "on page 73",
                 "Check the books in this room and select all images that are"
             )
         } else if (currentLevel === 8) {
+            loadImageSet(
+                "./images1",
+                [1, 4, 7, 8],
+                "author portraits from books the books in this room",
+                "Select all images with"
+            )
+        } else if (currentLevel === 9) {
             loadImageSet(
                 "./disasters",
                 [3, 5, 6, 7],
                 "spelled by the letters connected with red string",
                 "Select all images with what is"
             )
-        } else if (currentLevel === 9) {
+        } else if (currentLevel === 10) {
             loadImageSet(
                 "./images1",
                 [1],
                 "monsters watching you right now",
                 "Look out! Select all four"
             )
-        } else if (currentLevel === 10) {
+        } else if (currentLevel === 11) {
             loadImageSet(
                 "./images1",
                 [1, 5, 6, 8],
                 "the puzzle in the fake book",
                 "Select all images that match"
             )
-        } else if (currentLevel === 11) {
+        } else if (currentLevel === 12) {
             loadImageSet(
                 "./images1",
                 [1],
                 "the Sunset Park librarians' pockets",
                 "Select all the things currently in"
             )
-        } else if (currentLevel === 12) { 
+        } else if (currentLevel === 13) { 
             // Open new webpage after final level is completed 
             window.open("https://squidwithelbows.github.io/libraryescaperoom/verifiedhuman", "_blank") 
         }
