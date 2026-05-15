@@ -159,7 +159,7 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images1",
                 [1],
-                "monsters watching you right now",
+                "monsters that are watching you right now",
                 "LOOK OUT! Select all four"
             )
         } else if (currentLevel === 11) {
