@@ -124,7 +124,7 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images3",
                 [2, 3, 6],
-                "on the clock in your current room",
+                "on the clock in this room",
                 "Look around you and select all images that are"
             )
         } else if (currentLevel === 6) {
