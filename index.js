@@ -166,8 +166,8 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images1",
                 [1, 5, 6, 8],
-                "the puzzle you found in the fake book",
-                "Select all images that match"
+                "the puzzle in the fake book",
+                "Select the images that make this captcha match"
             )
         } else if (currentLevel === 12) {
             loadImageSet(
