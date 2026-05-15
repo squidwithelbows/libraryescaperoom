@@ -145,8 +145,8 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images1",
                 [1],
-                "author portraits from books the books in this room",
-                "Select all images with"
+                "from the books in this room",
+                "Select all of the author portraits"
             )
         } else if (currentLevel === 9) {
             loadImageSet(
