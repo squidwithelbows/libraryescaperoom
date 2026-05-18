@@ -176,8 +176,8 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images1",
                 [1],
-                "the librarians' pockets",
-                "Select all the things currently in"
+                "in their pockets",
+                "Select everything the Sunset Park librarians have"
                 // WIP
             )
         } else if (currentLevel === 13) { 
