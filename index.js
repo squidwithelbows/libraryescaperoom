@@ -177,7 +177,7 @@ document.getElementById("verify").addEventListener("click",()=> {
                 "./images1",
                 [1],
                 "in their pockets",
-                "Select everything the Sunset Park librarians have"
+                "Select everything the Sunset Park librarians currently have"
                 // WIP
             )
         } else if (currentLevel === 13) { 
