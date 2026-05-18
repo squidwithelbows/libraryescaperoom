@@ -159,15 +159,15 @@ document.getElementById("verify").addEventListener("click",()=> {
             loadImageSet(
                 "./images1",
                 [1],
-                "monsters watching you right now",
-                "LOOK OUT! Select all four of the"
+                "watching you right now",
+                "LOOK OUT! Select all four of the monsters that are"
             )
         } else if (currentLevel === 11) {
             loadImageSet(
                 "./images1",
                 [1, 5, 6, 8],
                 "the puzzle in the fake book",
-                "Select the images that make this captcha match"
+                "Select all of the images that make this captcha match"
             )
         } else if (currentLevel === 12) {
             loadImageSet(
