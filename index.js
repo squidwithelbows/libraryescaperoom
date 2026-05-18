@@ -147,6 +147,7 @@ document.getElementById("verify").addEventListener("click",()=> {
                 [1],
                 "from the books in this room",
                 "Select all of the author portraits"
+                // WIP
             )
         } else if (currentLevel === 9) {
             loadImageSet(
@@ -161,6 +162,7 @@ document.getElementById("verify").addEventListener("click",()=> {
                 [1],
                 "watching you right now",
                 "LOOK OUT! Select all four of the monsters that are"
+                // WIP
             )
         } else if (currentLevel === 11) {
             loadImageSet(
@@ -168,6 +170,7 @@ document.getElementById("verify").addEventListener("click",()=> {
                 [1, 5, 6, 8],
                 "the puzzle in the fake book",
                 "Select all of the images that make this captcha match"
+                // WIP
             )
         } else if (currentLevel === 12) {
             loadImageSet(
@@ -175,6 +178,7 @@ document.getElementById("verify").addEventListener("click",()=> {
                 [1],
                 "the librarians' pockets",
                 "Select all the things currently in"
+                // WIP
             )
         } else if (currentLevel === 13) { 
             // Open new webpage after final level is completed 
