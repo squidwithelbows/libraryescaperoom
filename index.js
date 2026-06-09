@@ -143,20 +143,12 @@ document.getElementById("verify").addEventListener("click",()=> {
             )
         } else if (currentLevel === 8) {
             loadImageSet(
-                "./images1",
-                [1],
-                "from the books in this room",
-                "Select all of the author portraits"
-                // WIP
-            )
-        } else if (currentLevel === 9) {
-            loadImageSet(
                 "./disasters",
                 [3, 5, 6, 7],
                 "spelled by the letters on the wall",
                 "Follow the red string and select all images with what is"
             )
-        } else if (currentLevel === 10) {
+        } else if (currentLevel === 9) {
             loadImageSet(
                 "./images1",
                 [1],
@@ -164,7 +156,7 @@ document.getElementById("verify").addEventListener("click",()=> {
                 "LOOK OUT! Select all four of the monsters that are"
                 // WIP
             )
-        } else if (currentLevel === 11) {
+        } else if (currentLevel === 10) {
             loadImageSet(
                 "./images1",
                 [1, 5, 6, 8],
@@ -172,7 +164,7 @@ document.getElementById("verify").addEventListener("click",()=> {
                 "Select all of the images that make this captcha match"
                 // WIP
             )
-        } else if (currentLevel === 12) {
+        } else if (currentLevel === 11) {
             loadImageSet(
                 "./images1",
                 [1],
@@ -180,7 +172,7 @@ document.getElementById("verify").addEventListener("click",()=> {
                 "Select everything the Sunset Park librarians currently have"
                 // WIP
             )
-        } else if (currentLevel === 13) { 
+        } else if (currentLevel === 12) { 
             // Open new webpage after final level is completed 
             window.open("https://squidwithelbows.github.io/libraryescaperoom/verifiedhuman", "_blank") 
         }
