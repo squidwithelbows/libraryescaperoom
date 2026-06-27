@@ -158,11 +158,11 @@ document.getElementById("verify").addEventListener("click",()=> {
             )
         } else if (currentLevel === 10) {
             loadImageSet(
-                "./images1",
+                "./puzzle",
                 [1, 5, 6, 8],
                 "the puzzle in the fake book",
                 "Select all of the images that make this captcha match"
-                // WIP
+                // WIP, make new physical puzzle
             )
         } else if (currentLevel === 11) {
             loadImageSet(
