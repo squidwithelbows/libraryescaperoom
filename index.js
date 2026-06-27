@@ -150,29 +150,21 @@ document.getElementById("verify").addEventListener("click",()=> {
             )
         } else if (currentLevel === 9) {
             loadImageSet(
-                "./images1",
-                [1],
-                "watching you right now",
-                "LOOK OUT! Select all four of the monsters that are"
-                // WIP
-            )
-        } else if (currentLevel === 10) {
-            loadImageSet(
                 "./puzzle",
                 [1, 5, 6, 8],
                 "the puzzle in the fake book",
                 "Select all of the images that make this captcha match"
                 // WIP, make new physical puzzle
             )
-        } else if (currentLevel === 11) {
+        } else if (currentLevel === 10) {
             loadImageSet(
                 "./images1",
                 [1],
                 "in their pockets",
                 "Select everything the Sunset Park librarians currently have"
-                // WIP
+                // WIP, take pictures at work
             )
-        } else if (currentLevel === 12) { 
+        } else if (currentLevel === 11) { 
             // Open new webpage after final level is completed 
             window.open("https://squidwithelbows.github.io/libraryescaperoom/verifiedhuman", "_blank") 
         }
