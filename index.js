@@ -154,15 +154,13 @@ document.getElementById("verify").addEventListener("click",()=> {
                 [1, 5, 6, 8],
                 "the puzzle in the fake book",
                 "Select all of the images that make this captcha match"
-                // WIP, make new physical puzzle
             )
         } else if (currentLevel === 10) {
             loadImageSet(
-                "./images1",
-                [1],
+                "./pockets",
+                [2, 4, 6, 7, 8],
                 "in their pockets",
                 "Select everything the Sunset Park librarians currently have"
-                // WIP, take pictures at work
             )
         } else if (currentLevel === 11) { 
             // Open new webpage after final level is completed 
