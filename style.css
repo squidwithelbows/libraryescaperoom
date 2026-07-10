@@ -147,9 +147,10 @@ h2 {
 #submit {
     background-color: #FA003F;
     color: white;
-    padding: 15px;
+    border: none;
+    padding: 15px 24px;
     text-align: center;
-    font-size: 36 px;
+    font-size: 36px;
     font-weight: bold;
 }
 
