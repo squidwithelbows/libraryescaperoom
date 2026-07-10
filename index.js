@@ -115,23 +115,23 @@ document.getElementById("verify").addEventListener("click",()=> {
             )
         } else if (currentLevel === 4) {
             loadImageSet(
-                "./river",
-                [5, 9],
-                "always runs but never walks, has a bed but never sleeps, has a mouth but never speaks",
-                "Select all images with something that"
-            )
-        } else if (currentLevel === 5) {
-            loadImageSet(
                 "./images3",
                 [2, 3, 6],
                 "on the clock in this room",
                 "Look around you and select all images that are"
             )
-        } else if (currentLevel === 6) {
+        } else if (currentLevel === 5) {
             loadImageSet(
                 "./images2",
                 [2, 5, 6, 9],
                 "in the sink",
+                "Select all images that are"
+            )
+         } else if (currentLevel === 6) {
+            loadImageSet(
+                "./river",
+                [1, 3, 4, 5],
+                "under the table",
                 "Select all images that are"
             )
         } else if (currentLevel === 7) {
