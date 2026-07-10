@@ -355,3 +355,13 @@ h2 {
     cursor: pointer;
     user-select: none;
 }
+
+.button {
+        background-color: #FA003F;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 24 px;
+        font-weight: bold;
+    }
+
