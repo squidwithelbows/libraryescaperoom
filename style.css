@@ -145,7 +145,12 @@ h2 {
 }
 
 #submit {
-    margin: 10px 0;
+    background-color: #FA003F;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24 px;
+    font-weight: bold;
 }
 
 #solve-box {
