@@ -129,7 +129,7 @@ document.getElementById("verify").addEventListener("click",()=> {
             )
          } else if (currentLevel === 6) {
             loadImageSet(
-                "./river",
+                "./images5",
                 [1, 3, 4, 5],
                 "under the table",
                 "Select all images that are"
